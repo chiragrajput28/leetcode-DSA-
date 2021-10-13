@@ -2,7 +2,9 @@
     "java.project.sourcePaths": [
         "Strings",
         "Queue",
+        "Matrix",
         "HashMap",
-        "Arrays"
+        "Arrays",
+        ""
     ]
 }
