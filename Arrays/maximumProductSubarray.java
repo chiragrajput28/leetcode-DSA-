@@ -10,10 +10,10 @@ public class maximumProductSubarray {
         if (nums.length == 1) return nums[0];
         for (int i = 0; i < nums.length; i++) {
             lastMaxproduct = nums[i];
-            for (int j = i+1; j < nums.length; j++) {
-                if (maxproduct < lastMaxproduct) {
+            if (maxproduct < lastMaxproduct) {
                     maxproduct = lastMaxproduct;
-                }
+            }
+            for (int j = i+1; j < nums.length; j++) {
                 lastMaxproduct *= nums[j];
                 if (maxproduct < lastMaxproduct) {
                     maxproduct = lastMaxproduct;
