@@ -41,32 +41,11 @@ public class slidingWindowMaximun {
     public static void main(String[] args) {
         int[] nums = {1,3,-1,-3,5,3,6,7};
         int k = 3;
-        int[] ans = maxSlidingWindow(nums, k);
-        System.out.println(Arrays.toString(ans));
+        // int[] ans = maxSlidingWindow(nums, k);
+        // System.out.println(Arrays.toString(ans));
     }
     //using doubly ended queue (optimised)
-    public static int[] maxSlidingWindow(int[] nums, int k) {
-        int a = nums.length;
-        Deque<Integer> dq = new LinkedList<>();
-        int ans[] = new int[a-k+1];
-        int i = 0;
-        for (; i < k; i++) {        
-            while(!dq.isEmpty() && nums[dq.peekLast()] <= nums[i]) {  
-                dq.removeLast();
-            }  
-            dq.addLast(i);
-        }
-        for(; i < a; i++) {
-            ans[i-k] = nums[dq.peekFirst()];
-            while(!dq.isEmpty() && dq.peekFirst() <= i-k) {
-                dq.removeFirst();
-            }
-            while(!dq.isEmpty() && nums[dq.peekLast()] <= nums[i]) {  
-                dq.removeLast();
-            }  
-            dq.addLast(i);
-        }
-         ans[i-k] = nums[dq.peekFirst()];
-        return ans;
-    }
+    // public static int[] maxSlidingWindow(int[] nums, int k) {
+        
+    // }
 }
