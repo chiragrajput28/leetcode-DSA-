@@ -35,12 +35,12 @@ Input: nums = [4,-2], k = 2
 Output: [4]
  */
 
-import java.util.*;
+//import java.util.*;
 
 public class slidingWindowMaximun {
     public static void main(String[] args) {
-        int[] nums = {1,3,-1,-3,5,3,6,7};
-        int k = 3;
+        // int[] nums = {1,3,-1,-3,5,3,6,7};
+        // int k = 3;
         // int[] ans = maxSlidingWindow(nums, k);
         // System.out.println(Arrays.toString(ans));
     }

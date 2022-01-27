@@ -54,6 +54,7 @@ public class validateIP {
         }
         return ans;
     }
+    
     public static boolean check(String a) {
         if (a.matches("^[a-zA-Z]*$") || a.contains(" ")) return false;
         int num = Integer.parseInt(a);
